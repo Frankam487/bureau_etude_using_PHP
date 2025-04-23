@@ -122,18 +122,17 @@ td a {
     margin-right: 1rem;
     transition: color 0.3s ease;
 }
-
+tbody td a{
+  background: rgb(137, 212, 137);
+  color: rgb(1, 1, 1);
+  padding: 10px;
+  border-radius: 12px;
+}
 td a:hover {
     color: #119700;
 }
 
-td a:last-child {
-    color: #d32f2f;
-}
 
-td a:last-child:hover {
-    color: #b71c1c;
-}
 
 
 .table-container, table[border="1"] {
