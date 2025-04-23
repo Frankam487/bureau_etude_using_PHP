@@ -42,6 +42,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && $produit_exist){
       ]);
       $message = "Produit mis a jour avec succes";
       $description = '';
+      header("Location: index.php");
     } catch(PDOException $e){
       $message = "Erreur". $e->getMessage();
     }

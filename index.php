@@ -32,12 +32,15 @@ try{
     <p class="pasDeDonnee">Aucun produit trouvé.</p>
     <?php else :?>
 <div class="creer">
-  <a href="./create.php">Creer un produit</a>
-  
+  <div class="links">
+
+    <a href="./create.php">Creer un produit</a>
+    <a href="./create_composant.php" class="composant">Ajout de composant</a>
+    
+  </div>
   
 </div>
     <div class="table-container">
-      <a href="./create_composant.php">Ajout de composant</a>
       <table>
         <thead>
           <tr>
