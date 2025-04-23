@@ -19,6 +19,7 @@ try{
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
@@ -32,11 +33,11 @@ try{
     <?php else :?>
 <div class="creer">
   <a href="./create.php">Creer un produit</a>
-  <a href="./create_composant.php">Ajouter un nouveau composant</a> <br>
+  
   
 </div>
     <div class="table-container">
-      <a href="">Ajout de composant</a>
+      <a href="./create_composant.php">Ajout de composant</a>
       <table>
         <thead>
           <tr>

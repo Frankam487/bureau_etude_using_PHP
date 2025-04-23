@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($count > 0) {
                 $message = "Erreur : Cette combinaison produit-composant existe déjà.";
             } else {
-                // Insertion dans Nomenclature
+                
                 $sql_insert = "INSERT INTO Nomenclature (id_produit, id_composant, quantite) VALUES (:id_produit, :id_composant, :quantite)";
                 $stmt_insert = $pdo->prepare($sql_insert);
                 $stmt_insert->execute([
@@ -76,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Ajouter une entrée à la nomenclature</title>
 </head>
 <body>

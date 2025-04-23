@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $message = "Composant ajouté avec succès !";
             $description = '';
             $cout_unitaire = '';
+            header("Location: list_composants.php");
         } catch (PDOException $e) {
             $message = "Erreur : " . $e->getMessage();
         }
@@ -51,6 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Ajouter un composant</title>
 </head>
 <body>
